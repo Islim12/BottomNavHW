@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_nav"
+    app:startDestination="@id/firstFragment">
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="org.islimakkaya.samples.application.bottomnavhw.FirstFragment"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_first" >
+        <action
+            android:id="@+id/firstFragmentTransition"
+            app:destination="@id/additionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="org.islimakkaya.samples.application.bottomnavhw.SecondFragment"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_second" >
+        <action
+            android:id="@+id/secondFragmentTransition"
+            app:destination="@id/multiplicationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/additionFragment"
+        android:name="org.islimakkaya.samples.application.bottomnavhw.AdditionFragment"
+        android:label="fragment_addition"
+        tools:layout="@layout/fragment_addition" >
+        <argument
+            android:name="sum"
+            app:argType="string"
+            android:defaultValue="Sayı  yok" />
+    </fragment>
+    <fragment
+        android:id="@+id/multiplicationFragment"
+        android:name="org.islimakkaya.samples.application.bottomnavhw.MultiplicationFragment"
+        android:label="fragment_multiplication"
+        tools:layout="@layout/fragment_multiplication" >
+        <argument
+            android:name="multp"
+            app:argType="string"
+            android:defaultValue="Sayı yok" />
+    </fragment>
+</navigation>
