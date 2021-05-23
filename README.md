@@ -1,5 +1,5 @@
 # BottomNavHW
-005-BottomNavHW: In this project, it is aimed using bottom navigation bar and data transition page to page.
+005-BottomNavHW: In this project, it is aimed using bottom navigation bar and data transition.
 
 (➕✖️)This project includes:
 -	LayoutInflater for creating Layout object and using it with inflater() method to create “design” constant variable which I used it for telling what to do to the Fragment when opening related Fragment.
